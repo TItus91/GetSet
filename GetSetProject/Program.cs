@@ -4,8 +4,6 @@ namespace GetSetProject
 {
 	class Entity
 	{
-		private string name;
-
 		public Entity(string _name)
 		{
 			name = _name;
@@ -16,6 +14,7 @@ namespace GetSetProject
 			name = null;
 		}
 
+		private string name;
 		public string Name { get; set; }
 		public string Name2;
 		public string Name3
@@ -42,7 +41,6 @@ namespace GetSetProject
 	{
 		static void Main(string[] args)
 		{
-
 			Entity czlowiek = new Entity();
 			czlowiek.Name = "Jan";
 			czlowiek.Name2 = "Tomasz";
